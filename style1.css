@@ -1,0 +1,60 @@
+#main{
+	width: 100%;
+}
+#header{
+	margin-top: 20px;
+	width: 100%;
+	height: 110px;
+	background-color: grey;
+	border: 3px solid navy;
+	border-radius: 15px;
+	outline: 3px dotted red;
+	outline-offset: 5px;
+	font-family: arial;
+	color: red;
+	text-align: center;
+	line-height: 2.5px;
+}
+#pic1{
+	margin-top: 40px;
+	width: 60px;
+	height: 50px;
+}
+#headermain{
+	display: flex;
+}
+#p1{
+	font-family: arial;
+	font-size: 15px;
+}
+#p2{
+	font-family: arial;
+	font-size: 15px;
+}
+#quizsection{
+	margin-top: 20px;
+	width: 100%;
+	background-color: black;
+	border: 3px solid navy;
+	font-family: calibri;
+	color: navy;
+}
+#qst{
+	padding: 5px;
+}
+#opt{
+	padding: 0px;
+}
+ol{
+	list-style: lower-alpha;
+}
+#score{
+	margin-top: 10px;
+	width: 300px;
+	height: 80px;
+	background-color: navy;
+	color: white;
+	border: 3px solid red;
+	border-radius: 10px;
+	text-align: center;
+}

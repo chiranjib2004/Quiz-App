@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz Application</title>
+	<link rel="stylesheet" href="./css/style1.css">
+	<link rel="stylesheet" href="./css/idxstyle.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		ctr=0
+		function result(res1,res2,res3,res4,res5) {
+			if(res1==1)
+				ctr+=5
+			if(res2==1)
+				ctr+=5
+			if(res3==1)
+				ctr+=5
+			if(res4==1)
+				ctr+=5
+			if(res5==1)
+				ctr+=5
+			document.getElementById("res").innerHTML="Ur Score: "+ctr+"/25"
+		}
+		
+	</script>
+</head>
+<body>
+	
+<div id=main>
+	<div id=headermain>
+		<div><img id=pic1 src="./images/quiz.png"></div>
+		<div id=header>
+		<h1 id=p1>QUIZ Application</h1>
+		<p></p>
+		<h2 id=p1>Trident Academy of Techonology</h2>
+		<h4 id=p2>Infocity</h4>
+		<h4 id=p2>Bhubaneswar</h4>
+		</div>
+		<div><img id=pic1 src="./images/quiz1.png"></div>
+	</div>
+	<p></p>
+	<div id=section2>
+		<a href="./ctest.html">
+		<input type="button" value="C Test" class="btn btn-danger">
+		</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="./htmltest.html">
+		<input type="button" value="HTML Test" class="btn btn-danger">
+		</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="./javascript.html">
+		<input type="button" value="JavaScript Test" class="btn btn-danger">
+		</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="./javatest.html">
+		<input type="button" value="JAVA Test" class="btn btn-danger">
+		</a>
+	</div>
+	<center>
+	<font color=navy size=4px face=calibri>JavaScript Test</font>
+	</center>
+
+	<div id=quizsection>
+		<div id=qst>
+			Q1. JS code can be written within ____________.
+		</div>
+		<div id=opt>
+			<form name=f1>
+			<ol>
+				<li> <input type=radio name=q1 value="0"> HEAD Tag
+				<li> <input type=radio name=q1 value="0"> Body Tag
+				<li> <input type=radio name=q1 value="1"> HEAD & BODY Tag
+				<li> <input type=radio name=q1 value="0"> none	
+			</ol>
+			</form>
+		</div>
+		<div id=qst>
+			Q2. JavaScript is Case Sensitive Language.
+		</div>
+		<div id=opt>
+			<form name=f2>
+			<ol>
+				<li> <input type=radio name=q2 value="0"> False
+				<li> <input type=radio name=q2 value="1"> True
+				<li> <input type=radio name=q2 value="0"> Can't say
+				<li> <input type=radio name=q2 value="0"> none	
+			</ol>
+			</form>
+		</div>
+		<div id=qst>
+			Q3. JS code must be written within which tag?
+		</div>
+		<div id=opt>
+			<form name=f3>
+			<ol>
+				<li> <input type=radio name=q3 value="0"> HEAD Tag
+				<li> <input type=radio name=q3 value="1"> Script Tag
+				<li> <input type=radio name=q3 value="0"> Body Tag
+				<li> <input type=radio name=q3 value="0"> None	
+			</ol>
+			</form>
+		</div>
+		<div id=qst>
+			Q4. In JavaScript write() is a ______.
+		</div>
+		<div id=opt>
+			<form name=f4>
+			<ol>
+				<li> <input type=radio name=q4 value="0"> Class
+				<li> <input type=radio name=q4 value="1"> Method
+				<li> <input type=radio name=q4 value="0"> Constructor
+				<li> <input type=radio name=q4 value="0"> None	
+			</ol>
+			</form>
+		</div>
+		<div id=qst>
+			Q5. Javascript is a Server Side scripting language. 
+		</div>
+		<div id=opt>
+			<form name=f5>
+			<ol>
+				<li> <input type=radio name=q5 value="0"> True
+				<li> <input type=radio name=q5 value="1"> False
+				<li> <input type=radio name=q5 value="0"> Can't Say
+				<li> <input type=radio name=q5 value="0"> None	
+			</ol>
+			</form>
+		</div>
+	</div>
+	
+
+	<div id=score>
+		<button class="btn btn-warning" onclick="result(f1.q1.value,f2.q2.value,f3.q3.value,f4.q4.value,f5.q5.value)">Click to get result</button>
+		<p id="res"></p>
+
+	</div>
+</div>
+</body>
+</html>
